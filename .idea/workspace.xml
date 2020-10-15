@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:computerarts" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6d1ae2-15fc-46cf-bd40-7003a0e6daf0" name="Default Changelist" comment="" />
+    <list default="true" id="7f6d1ae2-15fc-46cf-bd40-7003a0e6daf0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Inverted_pentacle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Serpiente_alquimica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookofshadows.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pentagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +37,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iSjXJBGBBfs5gXs1WLgVNlo0D3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,6 +54,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -33,11 +66,57 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601907925583</updated>
-      <workItem from="1601907926644" duration="690000" />
+      <workItem from="1601907926644" duration="1137000" />
+      <workItem from="1602710988175" duration="8006000" />
+      <workItem from="1602723836529" duration="7448000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602717584682">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1602717584682" />
+    <state x="122" y="37" key="DiffContextDialog" timestamp="1602723096595">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="122" y="37" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1602723096595" />
+    <state x="561" y="268" key="Github.ShareDialog" timestamp="1601908718652">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="561" y="268" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1601908718652" />
+    <state x="508" y="75" key="Github.UntrackedFilesDialog" timestamp="1601908736054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="508" y="75" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601908736054" />
+    <state x="491" y="66" key="RollbackChangesDialog" timestamp="1602723098172">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="491" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602723098172" />
   </component>
 </project>
