@@ -1,9 +1,16 @@
-
-.heading {
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h1{
     color: #D9A9FF;
     font-size: 40px;
     font-family: "Bookman Old Style";
 }
+ h2 {
+     color: #a83bff;
+ }
 
 
 .text {
@@ -20,6 +27,3 @@ a:visited {
     color: #ffc0cb;
 }
 
-.first {
-    color: #a83bff;
-}

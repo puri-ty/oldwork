@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f6d1ae2-15fc-46cf-bd40-7003a0e6daf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Inverted_pentacle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serpiente_alquimica.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookofshadows.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pentagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    <list default="true" id="7f6d1ae2-15fc-46cf-bd40-7003a0e6daf0" name="Default Changelist" comment="Add image commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,6 +50,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -68,8 +65,19 @@
       <updated>1601907925583</updated>
       <workItem from="1601907926644" duration="1137000" />
       <workItem from="1602710988175" duration="8006000" />
-      <workItem from="1602723836529" duration="7448000" />
+      <workItem from="1602723836529" duration="7903000" />
+      <workItem from="1602742342387" duration="687000" />
+      <workItem from="1602793321562" duration="3196000" />
+      <workItem from="1602813145101" duration="777000" />
     </task>
+    <task id="LOCAL-00001" summary="Add image commit">
+      <created>1602734208238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602734208238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +105,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add image commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add image commit" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="430" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602717584682">
       <screen x="0" y="0" width="1366" height="728" />
@@ -118,5 +130,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="491" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602723098172" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602734317866">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602734317866" />
   </component>
 </project>
