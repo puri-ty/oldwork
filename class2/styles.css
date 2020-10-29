@@ -1,0 +1,19 @@
+body {
+    background-color: #e1c4fa;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.links a:hover{
+    background-color:  #e1c4fa;
+    color: #cc89fa;
+
+
+}
