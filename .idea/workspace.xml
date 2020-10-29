@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f6d1ae2-15fc-46cf-bd40-7003a0e6daf0" name="Default Changelist" comment="Add image commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,15 @@
       <workItem from="1602793321562" duration="3196000" />
       <workItem from="1602813145101" duration="2645000" />
       <workItem from="1603291224180" duration="1188000" />
-      <workItem from="1603293368000" duration="5704000" />
+      <workItem from="1603293368000" duration="5826000" />
+      <workItem from="1603347147993" duration="600000" />
+      <workItem from="1603462854286" duration="1690000" />
+      <workItem from="1603709190782" duration="3006000" />
+      <workItem from="1603811814768" duration="2802000" />
+      <workItem from="1603881378274" duration="2815000" />
+      <workItem from="1603900114061" duration="119000" />
+      <workItem from="1603920793346" duration="693000" />
+      <workItem from="1603951706830" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Add image commit">
       <created>1602734208238</created>
@@ -86,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602814548288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add image commit">
+      <created>1603337348854</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603337348854</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,13 +148,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="508" y="75" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601908736054" />
-    <state x="491" y="66" key="RollbackChangesDialog" timestamp="1602723098172">
+    <state x="491" y="66" key="RollbackChangesDialog" timestamp="1603716246710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="491" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602723098172" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602814582807">
+    <state x="491" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603716246710" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603337405736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602814582807" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603337405736" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603882037194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603882037194" />
   </component>
 </project>
