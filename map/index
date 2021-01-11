@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <style>
+        #mapid { height:100vh; }
+    </style>
+</head>
+<body>
+    <div id="mapid"></div>
+<script>
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    L.tileLayer('https://api.maptiler.com/tiles/hillshades/{z}/{x}/{y}.png?key=k3epGjeKeqfZDnerCgTC', {
+    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoicHVyaS10eSIsImEiOiJja2pydWp3MTcxemFwMnpxcDVsenZmb3ByIn0.-3yufbgzVu1cQLIAy5NEaw'
+}).addTo(mymap);
+var marker = L.marker([27.59, 86]).addTo(mymap);
+marker.bindPopup("<b>Chomolungma</b><br>separating the plains of the Indian subcontinent from the Tibetan Plateau").openPopup();
+var marker = L.marker([35,76]).addTo(mymap);
+marker.bindPopup("<b>K2</b><br> China–Pakistan border").openPopup();
+var marker = L.marker([27,88]).addTo(mymap);
+marker.bindPopup("<b>Kangchenjunga</b><br>between Nepal and Sikkim, India").openPopup();
+var circle = L.circle([27,86], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 1000
+}).addTo(mymap);
+</script>
+</body>
+</html>
