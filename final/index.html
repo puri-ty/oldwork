@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Afrika, Tbilisi</title>
+  </head>
+<body>
+  <div id="mapid" style = "height:100vh;"></div>
+<script>
+   var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoicHVyaS10eSIsImEiOiJja2pydW54a2MxeWY3MnRsOXJzY201dGVmIn0.teJy_MgDZUdlEKWT3a7Dog'
+}).addTo(mymap);
+var videoUrls = [
+		'00000.mp4'
+	],
+	bounds = L.latLngBounds([[ 41.678767, 44.921374], [ 41.676307, 44.926169]]);
+
+	mymap.fitBounds(bounds);
+
+	var overlay = L.videoOverlay(videoUrls, bounds, {
+		opacity: 0.8,
+		interactive: false,
+		autoplay: false
+	});
+	mymap.addLayer(overlay);
+
+	overlay.on('load', function () {
+		var MyPauseControl = L.Control.extend({
+			onAdd: function() {
+				var button = L.DomUtil.create('button');
+				button.innerHTML = '⏸';
+				L.DomEvent.on(button, 'click', function () {
+					overlay.getElement().pause();
+				});
+				return button;
+			}
+		});
+		var MyPlayControl = L.Control.extend({
+			onAdd: function() {
+				var button = L.DomUtil.create('button');
+				button.innerHTML = '▶️';
+				L.DomEvent.on(button, 'click', function () {
+					overlay.getElement().play();
+				});
+				return button;
+			}
+		});
+
+		var pauseControl = (new MyPauseControl()).addTo(mymap);
+		var playControl = (new MyPlayControl()).addTo(mymap);
+	});
+	var marker = L.marker([41.678767, 44.921374]).addTo(mymap);
+marker.bindPopup("<b>Afrika,Tbilisi</b><br>An abandoned factory").openPopup();
+</script>
+</body>
+</html>
