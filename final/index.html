@@ -14,7 +14,7 @@
 <body>
   <div id="mapid" style = "height:100vh;"></div>
 <script>
-   var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+   var mymap = L.map('mapid').setView([41.678767, 44.921374], 16);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -26,44 +26,36 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var videoUrls = [
 		'00000.mp4'
 	],
-	bounds = L.latLngBounds([[ 41.678767, 44.921374], [ 41.676307, 44.926169]]);
-
-	mymap.fitBounds(bounds);
+	bounds = L.latLngBounds([[41.67866239905936, 44.92146001212459], [ 41.67700764869517, 44.92446408612691]]);
 
 	var overlay = L.videoOverlay(videoUrls, bounds, {
-		opacity: 0.8,
+		opacity: 0.9,
 		interactive: false,
 		autoplay: false
 	});
 	mymap.addLayer(overlay);
+	var points = [
+	{lat:41.678767,lng:44.921374, popup:"Afrika,Tbilisi</b><br>An abandoned factory", url:"00000.mp4"},
+	{lat:41.679168,lng:44.920494, popup:"Afrika,Tbilisi</b><br>A road to factory", url:"001.mp4"},
+	{lat:41.677605,lng:44.920376, popup:"Afrika,Tbilisi</b><br>Kiddos from Afrika", url:"002.mp4"},
+	{lat:41.676251,lng:44.919646, popup:"Afrika,Tbilisi</b><br>A family home", url:"00008.mp4"},
+	{lat:41.676043,lng:44.919742, popup:"Afrika,Tbilisi</b><br>An abandoned warehouse", url:"00011.mp4"},
+	{lat:41.678202,lng:44.921197, popup:"Afrika,Tbilisi</b><br>A family home near the factory", url:"004.mp4"},
+];
+	var markers = [ ];
+	for (i=0; i<points.length; i++) 
+	{
+		markers[i]=L.marker([points[i].lat,points[i].lng]).addTo(mymap);
+		markers[i].bindPopup(points[i].popup);
+		let point=points[i];
+		markers[i].on("click",function(e) {
+    overlay.setUrl(point.url);
+    overlay.getElement().play();
+}
+			);
 
-	overlay.on('load', function () {
-		var MyPauseControl = L.Control.extend({
-			onAdd: function() {
-				var button = L.DomUtil.create('button');
-				button.innerHTML = '⏸';
-				L.DomEvent.on(button, 'click', function () {
-					overlay.getElement().pause();
-				});
-				return button;
-			}
-		});
-		var MyPlayControl = L.Control.extend({
-			onAdd: function() {
-				var button = L.DomUtil.create('button');
-				button.innerHTML = '▶️';
-				L.DomEvent.on(button, 'click', function () {
-					overlay.getElement().play();
-				});
-				return button;
-			}
-		});
+	}
 
-		var pauseControl = (new MyPauseControl()).addTo(mymap);
-		var playControl = (new MyPlayControl()).addTo(mymap);
-	});
-	var marker = L.marker([41.678767, 44.921374]).addTo(mymap);
-marker.bindPopup("<b>Afrika,Tbilisi</b><br>An abandoned factory").openPopup();
 </script>
 </body>
 </html>
